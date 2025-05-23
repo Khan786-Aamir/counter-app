@@ -1,0 +1,23 @@
+name: print node info 
+
+on:
+  push:
+     branches: [master]
+
+jobs:
+   node-info:
+      run-on: ubuntu-latest
+
+      steps:
+        - name: checkout repository code
+          uses: action/checkout@v3
+
+        - name: print node.js version
+          run: node -v || echo "node is not installed yet"
+
+        - name: list project files
+          run: ls -la
+     
+
+
+
