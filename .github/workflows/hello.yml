@@ -8,5 +8,5 @@ jobs:
    say_Hello:
       runs-on: ubuntu-latest
       steps:
-         -name: print greeting 
-         run: echo "Hello , from Github Action!"
+         - name: print greeting 
+           run: echo "Hello , from Github Action!"
